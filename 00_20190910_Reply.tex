@@ -1,0 +1,288 @@
+\documentclass[10pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+%\usepackage{comment}
+\usepackage[dvips]{epsfig}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{bm}
+\usepackage{ulem}
+\usepackage{multirow}
+\graphicspath{{figures/}}
+\linespread{1.2}
+
+
+% \def\red{\textcolor{red}}
+% \def\green{\textcolor{green}}
+% \def\blue{\textcolor{blue}}
+% \def\magenta{\textcolor{magenta}}
+
+%for 3-vectors/dyadics
+% \def\##1{\underline{#1}}
+% \def\=#1{\underline{\underline{#1}}}
+
+% %for 6-vectors/dyadics
+% \def\+
+% #1{\underline{\bf #1}}
+% \def\*#1{\underline{\underline{\bf #1}}}
+
+% %\def\_#1{\underline{#1}}
+
+% \def\r#1{(\ref{#1})}
+% \def\l#1{\label{#1}}
+% \def\c#1{\cite{#1}}
+
+% \def\le{\left(}
+% \def\ri{\right)}
+% \def\les{\left[}
+% \def\ris{\right]}
+% \def\lec{\left\{}
+% \def\ric{\right\}}
+
+% \def\.{\mbox{ \tiny{$^\bullet$} }}
+
+% \def\eps{\varepsilon}
+
+
+% \def\O{\scriptscriptstyle O}
+% \def\epso{\eps_{\scriptscriptstyle 0}}
+% \def\lambdao{\lambda_{\scriptscriptstyle 0}}
+% \def\muo{\mu_{\scriptscriptstyle 0}}
+% \def\etao{\eta_{\scriptscriptstyle 0}}
+% \def\kappao{k_{\scriptscriptstyle 0}}
+% \def\ko{k_{\scriptscriptstyle 0}}
+% \def\co{c_{\scriptscriptstyle 0}}
+
+%  \def\vph{v_{ph}}
+
+
+% \def\curl{\nabla\times}
+% \def\ux{\hat{\#u}_x}
+% \def\uy{\hat{\#u}_y}
+% \def\uz{\hat{\#u}_z}
+
+% \def\curl{\nabla\times}
+
+% \def\Er{\#E(\#r,\omega)}
+% \def\Hr{\#H(\#r,\omega)}
+% \def\DDr{\#D(\#r,\omega)}
+% \def\Br{\#B(\#r,\omega)}
+
+
+% \def\calX{{\cal X}}
+% \def\calXm{{}^{(m)}{\cal X}}
+
+
+
+% \def\calA{{\cal A}}
+% \def\calB{{\cal B}}
+
+%\renewcommand{\baselinestretch}{1.6}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+
+\begin{document}
+
+Dear Editor:
+
+We really thank you for giving us a chance to respond to the Referees' reviews and we also appreciate the Referees' helpful comments and constructive suggestions. According to the recommendations and criticisms of the Referees, we have made several modiﬁcations in the manuscript. The detailed responses and changes are presented in the following.
+%We really thank you for giving us a chance to respond to the Referees' reviews and we also appreciate the Referees' helpful comments and constructive suggestions. According to the comments of Referee 3, we have made several modiﬁcations in the manuscript. The detailed responses and changes are presented in the following.
+%According to the recommendations and criticisms of the Referees, we have made several modiﬁcations in the manuscript. The detailed responses and changes are presented in the following.
+
+{\bf{To Referees}}
+
+% We extremely appreciate that the Referee 1 was satisfied with the former reply. We are also very grateful to the Referee 3 for her/his constructive suggestions in the comment. Thanks to the Referees' detailed comments, we have improved the presentation of the manuscript.% greatly.
+% %
+We extremely appreciate that the Referees took a responsible and professional attitude toward our manuscript and provided so many constructive suggestions in the comments, which motivate us to make a deeper analysis of the topic addressed in this work. Thanks to the Referees' detailed comments, the language, structure, literature and presentation of the manuscript have been greatly improved.
+
+\vspace{3mm}
+
+\begin{center}
+{\uline{\bf{Referee 1}}}
+\end{center}
+{\bf{The manuscript is devoted to an interesting problem of impact of multiple scattering by disorder on squeezed light. The authors show that whereas the scattering suppresses squeezing, using wavefront shaping techniques cancels the detrimental effect of multiple scattering and allows for obtaining quadrature fluctuations well below the shot-noise limit.
+
+The paper is well written (apart from some minor problems with the English, see below) and the results are sound and important. I believe that they certainly merit publication in JOSA B. However, there are several issues regarding mainly the presentation of results and their discussion, which I would like the authors to consider before publication:
+}}
+
+{\bf{(1) In Eq. (1), the authors assume that all $t$ and $r$ are independent. This should be stated explicitly. Also, the coefficients $t$ and $r$ compose the scattering matrix of the disordered sample, which is unitary. Thus, they cannot be all independent. This is not a very strong constraint if one is studying just a single $t$ (or $r$), but it can play a role when sums over many modes are performed. A comment about this issue may be needed. }}
+
+Reply: The referee has a particularly keen insight into this point. The scattering matrix consisting of the coefficients $t$ and $r$ is indeed unitary. Accordingly, the coefficients $t$ and $r$ are not all independent as stated in Appendix A, where one typical property {\it{or}} constraint is given by 
+\begin{align}
+\sum_{a'} |t_{a'b}|^2 + \sum_{b'}|r_{b'b}|^2 = 1.
+\end{align}
+This result can be derived by the standard commutation relation $[ \hat{a}_{b}, \hat{a}_{b}^{\dagger}] = 1$ where
+\begin{align}
+\hat{a}^{\dagger}_b &= \sum_{a'} t_{a'b}^{\ast} \hat{a}^{\rm{in}\dagger}_{a'} + \sum_{b'} r_{b'b}^{\ast} \hat{a}^{\rm{in}\dagger}_{b'}, \nonumber \\
+\hat{a}_b &= \sum_{a'} t_{a'b} \hat{a}^{\rm{in}}_{a'} + \sum_{b'} r_{b'b} \hat{a}^{\rm{in}}_{b'}.
+\end{align}
+
+In order to avoid misunderstanding, {\uline{we revise the sentence after Eq (1) as ``where $\hat{a}^{\rm{in}}_{a'}$ and $\hat{a}^{\rm{in}}_{b'}$ denote the annihilation operators of input modes and the transmission and reflection coefficients $t_{a' b}$ and $r_{b'b}$, subject to a constraint $\sum_{a'} |t_{a'b}|^2 + \sum_{b'} |r_{b'b}|^2 = 1$ (see Appendix A), can be approximately regarded as complex Gaussian random variables [58-60]."}}           
+\newpage
+
+{\bf{(2) The authors correctly distinguish the two types of averaging: the quantum mechanical averaging $\langle ... \rangle$ and the averaging over disorder (overbar). However, it is not fully clear to which situation their conclusions apply. For instance, will they apply to a measurement performed on a single disorder realization or only on average, after averaging over many realizations? May be formulating conclusions separately for the two situations (with and without disorder average) may clarify the situation.}}
+
+Reply: We appreciate very much that the Referee raised this question in the comments. We agree that it is necessary to distinguish the two kinds of averaging. As shown in sections 3A and 3B, our results can be divided into two categories: (I) $\langle ... \rangle$ [i.e. Eqs. (11), (14)-(17)] and (II) $\overline{\langle ... \rangle}$ [i.e. Eqs. (12), (13), (18)-(21)]. The former one is only related to the quantum mechanical averaging (without disorder average) while the later one is related to both the quantum mechanical averaging and the disorder-ensemble averaging.
+
+Actually, for case (I), the result without disorder average is only suitable for a measurement performed on a single disorder realization. For example, in Eq. (11), the variance, $\langle (\Delta \hat{x}_b^{\rm{w}})^2 \rangle = 1 - \sum_{a'}^{K} T_{a'b} (1- e^{-2r})$, depends deeply on a specific set of transmission coefficients $T_{a'b}$ corresponding to the single disordered sample in the experiment. On the contrary, for case (II), the result with disorder average applies only to a measurement performed on average, after averaging many disorder realizations.
+
+
+To describe clearly which situation the conclusions apply to, {\uline{after Eq. (12), we have added ``It is worthy pointing out that the result [Eq. (12)] is only suitable for the variance averaged over many disorder realizations whereas the result [Eq. (11)] without disorder average only applies to a measurement performed on a particular disorder sample."}} In addition, we replace {\uline{``variance" by ``averaged variance" throughout this paper if the ``variance" is related to the average over disorder ensemble.}}
+
+As a matter of fact, the average is easily written as an analytical expression and does not depend on one particular sample while the result without disorder average is only related to a single realization with a specific set of $t$ and $r$ and is not easily to use a universal expression to perform quantification analysis. Moreover, the average can clearly tell us the development trend of the output fluctuation as the change of parameters of this optical system (i.e. disordered strength $s$ and squeezing parameter $r$) while the result without disorder average may not. Therefore, we focus mainly on the average over an ensemble of many disorder realizations but not a particular disordered sample. Accordingly, our main conclusions are for the average as stated in sections 3A and 3B.
+
+
+{\bf{(3) The results averaged over disorder [like, e.g., Eq. (13)] may contain a contribution due to quantum effects and a contribution due to statistical fluctuations of sample parameters from one realization of disorder to another. It would be beneficial for the reader if the authors could separate these contributions and discuss them.}}
+
+
+Reply: We totally agree with the Referee that we should separate and discuss different contributions for the results. The result in Eq. (13), indeed include the these two different contributions: $\overline{\langle (\hat{x}_b)^2\rangle } = \overline{\langle (\hat{p}_b)^2\rangle } = 1 + \frac{K}{Ns} [\cosh(2r) - 1]$, the squeezing parameter $r$ corresponds to the quantum effects (non-classical states as input) while the $1/s$ comes from disorder-ensemble average. 
+
+To examine the two contributions, we review a simple example of Eq. (13) under several typical situations: (1) In the absence of the quantum effect (namely $r=0$, coherent state as input), Eq. (13) is reduced to $\overline{ \langle (\Delta \hat{x}_b )^2 \rangle } = 1$ which is constantly at the shot-noise level. However, in the presence of the quantum effect ($r \ne 0$), Eq. (13) is not equal to one any more. From this point of view, the quantum effect plays a dominant role in determining the averaged quantum fluctuation which leads to the averaged quantum fluctuation deviating (either above or below) the shot-noise level as depicted in Fig. 3(a). (2) In the presence of the quantum effect with a given $r$ ($r \ne 0$), it is easy to check that in Eq. (13) the averaged variance is only related to the parameters of disordered samples as depicted in Fig. 3(b).
+
+To clarify this issue, we rewrite the sentence after Eq. (13) as {\uline{``On the other hand, when $r=0$ (i.e. coherent-state input), Eq. (13) is reduced to $\overline{\langle (\Delta \hat{x}_{b})^2 \rangle} = \overline{\langle (\Delta \hat{p}_{b})^2 \rangle} = 1$ corresponding to the SNL. In other words, $r=0$ (i.e. without quantum effect) leads to the fact that the averaged quantum noise is always at the SNL regardless of what $s$ is. When $r>0$ (i.e. squeezed-state input), the averaged quantum noise is always above the SNL, which indicates that the scattered mode without WFS shows an averaged quantum noise above the SNL. In this sense, the quantum effect ($r\neq 0$) plays a dominate role in determining the averaged quantum noise."}}
+
+{\bf{(4) It is not clear to me what the number of input mode $K$ is. Why is it different from $N$? Is it $K = 1$ and $K = 2$ for the one- and two-mode squeezed states? Please clarify.}}
+
+Reply: Thank you for pointing out this issue. In this manuscript, $K$ is indeed different from $N$. Actually, $K$ denotes the total number of the incident beams (non-vacuum states) whereas $N$ represents the total number of the transmission channels of a disordered medium. 
+
+To give an intuitive explanation of $K$, let us review a simple case. For a two-port conventional beam splitter, if only one (two) beam is injected, according to our definition, it is easy to find that $K=1$ ($K=2$). However, whatever $K$ is, the number of transmission channels $N=2$ is constant. Similarly, in our work, we ideally regard the disordered medium as a multiport beam splitter where each port can be injected by one incident beam with a narrow-line shape. Actually, this theoretical model is used only for mathematical description.
+
+In experiments, usually, we can assume that $K=N$. This is owing to the fact that almost all transmission channels are injected with beams in general. In the phrase of ``the number of input mode $K$", the word ``mode" may be confusing. {\uline{Therefore, we have replaced all ``input mode $K$" by ``input beams $K$".}} In addition, we have added an intuitive explanation of $K$ as Ref. [73]: {\uline{``In fact, $K$ is different from $N$ where $K$ denotes the total number of the incident beams (non-vacuum states) whereas $N$ represents the total number of the transmission channels of a disordered medium. To give an intuitive explanation of $K$, let us review a simple case. For a two-port conventional beam splitter, if only one (two) beam is injected, based on our definition, it is easy to find that $K=1$ ($K=2$). However, whatever $K$ is, the number of transmission channels $N=2$ is constant." }}
+
+
+
+{\bf{(5) In the caption of Fig. 2, there are references to (a) and (b) but the figure has a single panel and no any marks (a) or (b) whatsoever. Please explain or correct.}}
+
+Reply: We are very grateful to the Referee for pointing out this issue to us. Actually, the phrase of ``Parameters used are: (a) and (b)" is a typo which has been removed.
+
+{\bf{(6) Why does Eq. (11) contain no cross-terms like $t_{a'b} \ast t_{a''b}$ ?}}
+
+
+Reply: 
+The detailed deviation of the variance $\langle (\Delta \hat{x}_b^{\rm{w}})^2\rangle= 1- \sum_{a'} T_{a'b} (1 - e^{-2r})$ [Eq. (11)] is shown as follows. First of all, it can be written as
+\begin{align}
+\label{var2}
+\langle (\Delta \hat{x}^{\rm{w}}_b)^2 \rangle =&  \langle (\hat{x}^{\rm{w}}_b)^2 \rangle - \langle \hat{x}^{\rm{w}}_b \rangle^2,
+\end{align}
+where
+\begin{align}
+%\label{var2a}
+\langle \hat{x}_b^{\rm{w}} \rangle =& \sum_{a'}{\sqrt{T_{a'b}}  \langle \hat{x}_{a'}^{\rm{in}} \rangle}, \nonumber\\ \nonumber
+\langle \hat{x}_b^{\rm{w}} \rangle^2 =& \sum_{a'} {T_{a'b} \langle\hat{x}_{a'}^{\rm{in}} \rangle^2 } + \sum_{a'\neq a''}  \sqrt{T_{a'b} T_{a''b}}   \langle\hat{x}_{a'}^{\rm{in}} \rangle \langle\hat{x}_{a''}^{\rm{in}}\rangle,\\ \nonumber
+\langle (\hat{x}_b^{\rm{w}})^2 \rangle  =&  \sum_{a'\neq a''}  \sqrt{T_{a'b} T_{a''b}}   \langle\hat{x}_{a'}^{\rm{in}} \hat{x}_{a''}^{\rm{in}}\rangle  + \sum_{a'} {T_{a'b} \langle(\hat{x}_{a'}^{\rm{in}})^2 \rangle } \\ \nonumber
+& +  \sum_{b'} R_{b'b}  [\cos^2 \phi_{b'b}  \langle(\hat{x}_{b'}^{\rm{in}})^2\rangle  + \sin^2 \phi_{b'b}  \langle(\hat{p}_{b'}^{\rm{in}})^2\rangle - \cos \phi_{b'b} \sin \phi_{b'b} ( \langle\hat{x}_{b'}^{\rm{in}} \hat{p}_{b'}^{\rm{in}}\rangle +  \langle\hat{p}_{b'}^{\rm{in}} \hat{x}_{b'}^{\rm{in}}\rangle )  ] \\ \nonumber
+&+ \sum_{a' b'}\sqrt{T_{a'b} R_{b'b}} [\cos \phi_{b'b} (\langle\hat{x}_{a'}^{\rm{in}} \hat{x}_{b'}^{\rm{in}}\rangle + \langle\hat{x}_{b'}^{\rm{in}} \hat{x}_{a'}^{\rm{in}}\rangle) - \sin \phi_{b'b} (\langle\hat{x}_{a'}^{\rm{in}} \hat{p}_{b'}^{\rm{in}}\rangle + \langle\hat{p}_{b'}^{\rm{in}} \hat{x}_{a'}^{\rm{in}}\rangle)].
+\end{align}
+Then Eq. (\ref{var2}) can be reduced to
+\begin{align}
+\label{var2b}
+\langle (\Delta \hat{x}^{\rm{w}}_b)^2 \rangle =&   \sum_{b'} R_{b'b}  [\cos^2 \phi_{b'b}  \langle(\hat{x}_{b'}^{\rm{in}})^2\rangle  + \sin^2 \phi_{b'b}  \langle(\hat{p}_{b'}^{\rm{in}})^2\rangle 
+- \cos \phi_{b'b} \sin \phi_{b'b} ( \langle\hat{x}_{b'}^{\rm{in}} \hat{p}_{b'}^{\rm{in}}\rangle +  \langle\hat{p}_{b'}^{\rm{in}} \hat{x}_{b'}^{\rm{in}}\rangle )  ] \\ \nonumber
+&+ \sum_{a' b'}\sqrt{T_{a'b} R_{b'b}} [\cos \phi_{b'b} (\langle\hat{x}_{a'}^{\rm{in}} \hat{x}_{b'}^{\rm{in}}\rangle + \langle\hat{x}_{b'}^{\rm{in}} \hat{x}_{a'}^{\rm{in}}\rangle) - \sin \phi_{b'b} (\langle\hat{x}_{a'}^{\rm{in}} \hat{p}_{b'}^{\rm{in}}\rangle + \langle\hat{p}_{b'}^{\rm{in}} \hat{x}_{a'}^{\rm{in}}\rangle)] \\ \nonumber
+& + \sum_{a'} T_{a'b} [\langle(\hat{x}_{a'}^{\rm{in}})^2 \rangle - \langle\hat{x}_{a'}^{\rm{in}} \rangle^2],\\ \nonumber
+\end{align}
+Eq. (\ref{var2b}) can be simplified to
+\begin{align}
+\langle (\Delta \hat{x}^{\rm{w}}_b)^2 \rangle=& \sum_{b'} R_{b'b} + \sum_{a'} T_{a'b} \langle (\Delta \hat{x}^{\rm{in}}_{a'})^2 \rangle,
+\end{align}
+where we have used $\langle (\hat{x}_{b'}^{\rm{in}})^2\rangle = \langle (\hat{p}_{b'}^{\rm{in}})^2\rangle = 1$, $\langle \hat{x}_{b'}^{\rm{in}} \hat{p}_{b'}^{\rm{in}}\rangle + \langle \hat{p}_{b'}^{\rm{in}} \hat{x}_{b'}^{\rm{in}}\rangle = 0$, $\langle \hat{p}_{b'}^{\rm{in}} \hat{x}_{a'}^{\rm{in}}\rangle =\langle \hat{x}_{a'}^{\rm{in}} \hat{p}_{b'}^{\rm{in}} \rangle= 0$.
+\begin{align}
+\label{d2r}
+\langle (\Delta \hat{x}^{\rm{w}}_b)^2 \rangle=& 1- \sum_{a'} T_{a'b} (1 - e^{-2r}),
+\end{align}
+where $\sum_{a'} T_{a'b} + \sum_{b'} R_{b'b} = 1$ and $\langle (\Delta \hat{x}^{\rm{in}}_{a'})^2 \rangle = e^{-2r}$ are used.
+
+As shown in Eq. (\ref{d2r}), {\uline{the cross terms $\sqrt{T_{a'b} T_{a''b}}$ vanish. This is because for single-mode squeezed states as input, since there is no quantum correlation between the two arbitrary different input beams $a'$ and $a''$, one has $\sum_{a'\neq a''}  \sqrt{T_{a'b} T_{a''b}}   \langle\hat{x}_{a'}^{\rm{in}} \hat{x}_{a''}^{\rm{in}}\rangle - \sum_{a'\neq a''}  \sqrt{T_{a'b} T_{a''b}}   \langle\hat{x}_{a'}^{\rm{in}} \rangle \langle \hat{x}_{a''}^{\rm{in}}\rangle = 0$. As a result, the cross terms [such as, $\sqrt{T_{a'b} T_{a''b}}$ ($t_{a'b} t_{a''b}$)] in the variance vanish. Nevertheless, for two-mode squeezed states as input, the cross terms [like $\sqrt{T_{a'b} T_{a''b}}$ ($t_{a'b} t_{a''b}$)] still exist due to the fact that there is quantum correlation between the two modes in each two-mode squeezed state.}}
+
+In addition, the cross terms $\sqrt{T_{a'b} R_{b'b}}$ also vanish due to the vacuum states of input mode $b'$ (namely, $\langle \hat{x}_{a'}^{\rm{in}} \hat{x}_{b'}^{\rm{in}} \rangle =\langle \hat{x}_{b'}^{\rm{in}} \hat{x}_{a'}^{\rm{in}} \rangle=0$). Therefore, there is no cross terms (i.e. $\sqrt{T_{a'b} R_{b'b}}$, $\sqrt{T_{a'b} T_{a''b}}$) in Eq. (11).
+
+\newpage
+
+{\bf{(7) Overall, the English of the manuscript is correct. However, there are a couple of places where corrections are needed:
+
+- In several places, including the title, replace ``lights" by ``light"
+
+- 1st line: ``illuminating on a disordered medium” $\to$ ``illuminating a disordered medium"
+
+- In the Conclusion: ``quantum fluctuation can be degraded" $\to$ ``quantum fluctuationS can be SUPPRESSED"}}
+
+Reply: We are very grateful to the Referee for pointing out these issues to us. According to the comments, we have fixed all these problems (``lights" $\to$ ``light", ``illuminating on a disordered medium” $\to$ ``illuminating a disordered medium", ``quantum fluctuation can be degraded" $\to$ ``averaged quantum fluctuation can be suppressed" [where the ``quantum fluctuation" indicates the ``averaged quantum fluctuation", thus ``fluctuation" is not replaced by ``fluctuationS"]).  The language, structure, literature and presentation of the manuscript have been greatly improved.
+
+\newpage
+
+\begin{center}
+{\uline{\bf{Referee 2}}}
+\end{center}
+{\bf{The authors study an interesting problem and find some novel results. The behavior of quantum light through scattering medium is important and difficult. They show via wavefront shaping, it is possible to modulate the quantum fluctuation of the scattering light. The derivation seems correct and the interpretation is reasonable. Before making the final decision, I would like to ask several question.
+}}
+
+{\bf{(1) Eq.(4) is the key formula in this paper. The cancel of phases in all transmisive channel is realized via wavefront shaping. I think this is possible only for 1 output channel. If the authors consider more than 2 output modes, such kind of phase control may not be realized.}}
+
+Reply: The referee has a particularly keen insight into this point. Yes, this is possible only for one particular output channel $b$ when such kind of phase setting of modulation in wavefront shaping is considered. It is not suitable for more than two output modes at the same time. 
+
+Nevertheless, comparing with this method, one slightly modified method can be extended to the case for more than two output modes. As a simple example, for only two output modes $b_1$ and $b_2$, one possible way is the modulation of cancel of phases in the first $N/2$ transmissive channels for $b_1$ and in the second $N/2$ ones for $b_2$. Correspondingly, the input-output relation is given by
+\begin{align}
+\hat{a}_{b_1} &= \sum_{a'=1}^{N/2} |t_{a'b_1}| \hat{a}^{\rm{in}}_{a'} + \sum_{a''=N/2+1}^{N} t'_{a''b_1} \hat{a}^{\rm{in}}_{a''} + \sum_{b'} r_{b'b_1} \hat{a}^{\rm{in}}_{b'}, \nonumber \\
+\hat{a}_{b_2} &= \sum_{a'=1}^{N/2} t'_{a'b_2} \hat{a}^{\rm{in}}_{a'} + \sum_{a''=N/2+1}^{N} |t_{a''b_2}| \hat{a}^{\rm{in}}_{a'} + \sum_{b'} r_{b'b_2} \hat{a}^{\rm{in}}_{b'},
+\end{align}
+where $t'_{a''b_1} = t_{a''b_1} e^{-i \theta_{a''b_2}}$ and $t'_{a'b_2} = t_{a'b_2} e^{-i \theta_{a'b_1}}$ with $t_{a''b_1}$ and $t_{a'b_2}$ being the original transmissive coefficients. As a result, this scheme can achieve the modulation of quantum fluctuation of the two output modes $b_1$ and $b_2$. 
+
+In the view of intensity distribution of the scattered modes, different from our original scheme corresponding to only one focused spot, this modified scheme may be related to two focused spots which can be realized in experiments [L. Wan, {\it{et al.}}, ``Focusing light into desired patterns through turbid media by feedback-based wavefront shaping," Applied Physics B 122, 204 (2016)].
+
+From this point of view, {\uline{the WFS can modulate either single output mode or two output modes.}} Of course, it is easy to extend to the case of more than two output modes (three, four, ...) with specific settings of phase modulation via WFS. However, since this paper is the first step towards this new method (modulation of quantum fluctuation of the scattered mode via wavefront shaping), analytical results for more complex schemes and other interesting physical phenomena are left for future investigation. Some works are already under way.
+
+
+{\bf{(2) On fig.3, I would like to see also the plots of $\Delta \hat{p}$.}}
+
+Reply: Thank you for your comments. For comparison, it is necessary to show the averaged variances of both $\hat{x}$ and $\hat{p}$ in Figs. 3 and 5. {\uline{Therefore, the averaged variances of $\hat{p}^{\rm{w}}_b$ and $\hat{p}_b$ have been added in Figs. 3 and 5, respectively. In the captions of Figs. 3 and 5, we rewrite the sentence ``The blue-solid line denotes the averaged quantum noise without WFS, the red-dash-dotted one the averaged quantum noise with WFS, and the gray-dashed one the SNL" as ``The red-dash-dotted, purple-solid, green-solid, blue-dotted, and gray-dashed lines denote the cases of $\hat{x}_b^{\rm{w}}$, $\hat{p}_b^{\rm{w}}$, $\hat{x}_b$, $\hat{p}_b$, and SNL, respectively. It is worthy pointing out that since the averaged variances of $\hat{x}_b$ and $\hat{p}_b$ are equal to each other, the corresponding curves are completely coincident."}} 
+
+
+{\bf{(3) On two-mode squeezed states an input, how it is experimentally possible to pair exactly $m$ and $m+K/2$ modes? If the input may be randomly, how about the results.}}
+
+Reply:  We appreciate very much that the Referee raised this question in the comment. In experiments, it is definitely not easy to exactly control which ports the beams are injected into. Fortunately, in our scheme, the input ports can be chosen randomly regardless of the labels. The explanation is given as follows. In this manuscript, we concentrate mainly on the average over disorder ensembles [i.e. Eqs. (12), (13)]. That is to say, we need perform measurements many times with different disordered realizations. {\uline{In this sense, choosing particular input ports in each measurement would not affect the final result, the average. In our work, the labels $m$ and $m+K/2$ are used just for mathematical description, where the labels can be chosen arbitrarily.}}
+
+If the input channel is randomly chosen in each measurement, of course, it may show a different result (without average over disorder ensembles). Nevertheless, it would not change for the average over many measurements on an ensemble of disordered realizations. {\uline{Thus, the fact that the input modes are randomly chosen each time, would not affect the final result (the average).}}
+
+
+
+
+
+
+\newpage
+
+%\vspace{10mm}
+\begin{center}
+{\uline{\bf{Change list}}}
+\end{center}
+(1) All ``lights" are modified as ``light".\\
+(2) The publication cited in the abstract is rewritten as ``P. Lodahl, Opt. Expr. 14, 6919 (2006)".\\
+(2) In the first sentence in section 1, ``illuminating on" is fixed as ``illuminating".\\
+(3) After Eq. (1) in section 2, the first sentence is revised as ``... the transmission and reflection coefficients $t_{a'b}$ and $r_{b'b}$, subject to a constraint $\sum_{a'} |t_{a'b}|^2 + \sum_{b'} |r_{b'b}|^2 = 1$ (see Append. A), can be approximately regarded as complex Gaussian random variables [58-60]."\\
+(4) After Eq. (7) in section 3, the first sentence is modified as ``where $\hat{O} = \hat{x}^{\rm{w}}_b, \hat{p}^{\rm{w}}_b$, and $\langle \hat{O} \rangle$ denotes the expectation value of $\hat{O}$."\\
+(5) All phrases of ``the number of input modes $K$" are replaced by ``the number of input beams $K$".\\
+(6) In the caption of Fig. 2, we have removed ``Parameters used are: (a) $s=2$ and (b) $r=1$".\\
+(7) After Eq. (12), we have added ``It is worthy pointing out that the result averaged over an ensemble of disorder... a measurement performed on a particular disorder sample."\\
+(8) In Figs. 3 and 5, the averaged variances of $\hat{p}_b^{\rm{w}}$ and $\hat{p}_b$ have been added. In the caption of Fig. 3 (5), the second sentence is rewritten as ``The averaged variances $\overline{\langle (\Delta \hat{O})^2 \rangle}$ ($\hat{O} =$$\hat{x}_b^{\rm{w}}$, $\hat{p}_b^{\rm{w}}$, $\hat{x}_b$, $\hat{p}_b$) versus ..., the corresponding curves are completely coincident."\\
+(9) After Eq. (13), we add the sentence ``On the other hand, when $r=0$ (i.e. coherent-state input), Eq. (13) is reduced to $\overline{\langle (\Delta \hat{x}_{b})^2 \rangle} = \overline{\langle (\Delta \hat{p}_{b})^2 \rangle} = 1$, which yields that the quantum fluctuation is at the SNL constantly."\\
+(10) In the last two paragraphs in section 3A, we have added ``averaged" in front of ``variance", ``quantum fluctuation", and ``quantum noise".\\
+(11) In the last two paragraphs in section 3B, the word of ``averaged" has been added in front of ``variance", ``quantum fluctuation", and ``quantum noise".\\
+(12) In conclusion, the fourth sentence is revised as ``If the two-mode squeezed states are considered as input, the averaged quantum fluctuation can be suppressed, but it is not always below the shot-noise level."\\
+(13) In conclusion, we have added ``averaged" in front of ``quantum fluctuation" and ``quantum noise".\\
+(14) The authors' names of Ref. [42] are modified as ``LIGO Scientific Collaboration".\\
+(15) In Reference, we add an external reference [73] which gives an explanation of $K$ as ``In fact, $K$ is different from $N$ ..., the transmission channel $N=2$ is constant."
+
+
+
+Once again, we are extremely grateful that the referee took a responsible and professional attitude toward our manuscript and consequently the present work has been considerably improved. We hope that the main concerns of the Referee have been clariﬁed and the revised manuscript could satisfy the requirements for publication in JOSA B. Thanks again for all your help.
+
+
+\vspace{10mm}
+
+Sincerely yours,
+
+Dong Li
+
+\end{document}
